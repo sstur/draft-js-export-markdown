@@ -63,6 +63,21 @@ class MarkupGenerator {
         this.output.push('### ' + this.renderBlockContent(block) + '\n');
         break;
       }
+      case BLOCK_TYPE.HEADER_FOUR: {
+        this.insertLineBreaks(1);
+        this.output.push('#### ' + this.renderBlockContent(block) + '\n');
+        break;
+      }
+      case BLOCK_TYPE.HEADER_FIVE: {
+        this.insertLineBreaks(1);
+        this.output.push('##### ' + this.renderBlockContent(block) + '\n');
+        break;
+      }
+      case BLOCK_TYPE.HEADER_SIX: {
+        this.insertLineBreaks(1);
+        this.output.push('###### ' + this.renderBlockContent(block) + '\n');
+        break;
+      }
       case BLOCK_TYPE.UNORDERED_LIST_ITEM: {
         let blockDepth = block.getDepth();
         let lastBlock = this.getLastBlock();
