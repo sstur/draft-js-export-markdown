@@ -40,6 +40,16 @@
     "export-markdown"
   ],
   "author": "sstur@me.com",
+  "contributors": [
+    {
+      "name": "Freddy Harris",
+      "url": "https://github.com/Freddy03h"
+    },
+    {
+      "name": "Simon Sturmer",
+      "url": "https://github.com/sstur"
+    }
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sstur/draft-js-export-markdown/issues"
