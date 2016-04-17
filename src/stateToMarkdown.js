@@ -5,7 +5,7 @@ import {
   BLOCK_TYPE,
   ENTITY_TYPE,
   INLINE_STYLE,
-} from 'draft-js-tools';
+} from 'draft-js-utils';
 import {Entity} from 'draft-js';
 
 import type {ContentState, ContentBlock} from 'draft-js';
