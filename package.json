@@ -19,6 +19,7 @@
     "immutable": "^3.8.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.7.5",
     "babel-core": "^6.7.6",
     "babel-eslint": "^6.0.2",
     "babel-plugin-transform-class-properties": "^6.6.0",
