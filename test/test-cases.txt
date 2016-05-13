@@ -14,6 +14,14 @@ _**BoldItalic**_
 {"entityMap":{},"blocks":[{"key":"9nc73","text":"BoldItalic","type":"unstyled","depth":0,"inlineStyleRanges":[{"offset":4,"length":6,"style":"BOLD"},{"offset":0,"length":4,"style":"ITALIC"}],"entityRanges":[]}]}
 _Bold_**Italic**
 
+>> Image with alt
+{"entityMap":{"0":{"type":"IMAGE","mutability":"MUTABLE","data":{"src":"/a.jpg","alt":"x"}}},"blocks":[{"key":"f131g","text":"Hello World.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[{"offset":5,"length":1,"key":0}]}]}
+Hello![ "x"](/a.jpg)World.
+
+>> Image with empty alt
+{"entityMap":{"0":{"type":"image","mutability":"MUTABLE","data":{"src":"/a.jpg","alt":""}}},"blocks":[{"key":"f131g","text":"Hello World.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[{"offset":5,"length":1,"key":0}]}]}
+Hello![](/a.jpg)World.
+
 >> Link without title
 {"entityMap":{"0":{"type":"LINK","mutability":"MUTABLE","data":{"url":"/a","foo":"x"}}},"blocks":[{"key":"f131g","text":"Hello World.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[{"offset":6,"length":5,"key":0}]}]}
 Hello [World](/a).
