@@ -18,7 +18,7 @@ _Bold_**Italic**
 {"entityMap":{"0":{"type":"IMAGE","mutability":"MUTABLE","data":{"src":"/a.jpg","alt":"x"}}},"blocks":[{"key":"f131g","text":"Hello World.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[{"offset":5,"length":1,"key":0}]}]}
 Hello![ "x"](/a.jpg)World.
 
->> Image with empty alt
+>> Image with empty alt and type written in lower case
 {"entityMap":{"0":{"type":"image","mutability":"MUTABLE","data":{"src":"/a.jpg","alt":""}}},"blocks":[{"key":"f131g","text":"Hello World.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[{"offset":5,"length":1,"key":0}]}]}
 Hello![](/a.jpg)World.
 
