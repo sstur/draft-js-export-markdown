@@ -1,7 +1,7 @@
 /* @flow */
 const {describe, it} = global;
 import expect from 'expect';
-import {ContentState, convertFromRaw} from 'draft-js';
+import {convertFromRaw} from 'draft-js';
 import stateToMarkdown from '../stateToMarkdown';
 import fs from 'fs';
 import {join} from 'path';
@@ -26,9 +26,7 @@ describe('stateToMarkdown', () => {
   testCases.forEach((testCase) => {
     let {description, state, markdown} = testCase;
     it(`should render ${description}`, () => {
-      let contentState = ContentState.createFromBlockArray(
-        convertFromRaw(state)
-      );
+      let contentState = convertFromRaw(state);
       expect(stateToMarkdown(contentState)).toBe(markdown + '\n');
     });
   });
