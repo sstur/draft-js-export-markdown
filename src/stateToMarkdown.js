@@ -95,7 +95,7 @@ class MarkupGenerator {
             this.insertLineBreaks(1);
           }
         }
-        let indent = ' '.repeat(block.depth * 2);
+        let indent = ' '.repeat(block.depth * 4);
         this.output.push(
           indent + '- ' + this.renderBlockContent(block) + '\n'
         );
@@ -115,7 +115,7 @@ class MarkupGenerator {
             this.insertLineBreaks(1);
           }
         }
-        let indent = ' '.repeat(blockDepth * 2);
+        let indent = ' '.repeat(blockDepth * 4);
         // TODO: figure out what to do with two-digit numbers
         let count = this.getListItemCount(block) % 10;
         this.output.push(
