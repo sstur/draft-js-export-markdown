@@ -4,12 +4,12 @@
   "description": "DraftJS: Export ContentState to Markdown",
   "main": "lib/main.js",
   "scripts": {
-    "build": "babel src --ignore '_*' --out-dir lib",
+    "build": "babel src --ignore \"_*\" --out-dir lib",
     "lint": "eslint --max-warnings 0 .",
     "typecheck": "flow",
     "prepublish": "npm run build",
     "test": "npm run lint && npm run typecheck && npm run test-src",
-    "test-src": "mocha src/__tests__/*.js src/**/__tests__/*.js"
+    "test-src": "mocha \"src/**/__tests__/*.js\""
   },
   "dependencies": {
     "draft-js-utils": "^0.1.5"
