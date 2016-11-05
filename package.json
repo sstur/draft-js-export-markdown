@@ -1,6 +1,6 @@
 {
   "name": "draft-js-export-markdown",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "DraftJS: Export ContentState to Markdown",
   "main": "lib/main.js",
   "scripts": {
