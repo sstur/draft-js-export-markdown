@@ -184,6 +184,7 @@ class MarkupGenerator {
   }
 
   renderBlockContent(block: ContentBlock): string {
+    let {contentState} = this;
     let blockType = block.getType();
     let text = block.getText();
     if (text === '') {
@@ -219,7 +220,7 @@ class MarkupGenerator {
         }
         return content;
       }).join('');
-      let entity = entityKey ? Entity.get(entityKey) : null;
+      let entity = entityKey ? contentState.getEntity(entityKey) : null;
       if (entity != null && entity.getType() === ENTITY_TYPE.LINK) {
         let data = entity.getData();
         let url = data.url || '';
